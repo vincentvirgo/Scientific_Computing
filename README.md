@@ -5,7 +5,7 @@
 ![Status](https://img.shields.io/badge/Status-Finished-brightgreen)
 
 <div align="center">
-  <img src="Resource/Forecast.png" width="75%">
+  <img src="figure.png" width="75%">
   <p><em>Figure: Forecasted Production vs Warehouse Capacity Threshold (2018–2030)</em></p>
 </div>
 
