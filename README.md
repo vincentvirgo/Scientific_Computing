@@ -1,129 +1,34 @@
-#📊 Production Trend Analysis using Quadratic Polynomial & Newton-Raphson Method
-#📌 Project Overview
+# 🏭 Production Forecasting & Warehouse Planning
 
-This project analyzes monthly production data (2018–2023) using a quadratic polynomial regression model. The goal is to capture non-linear production trends and make future predictions, including estimating when production will exceed warehouse capacity.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue) 
+![License](https://img.shields.io/badge/License-MIT-green) 
+![Status](https://img.shields.io/badge/Status-Finished-brightgreen)
 
-The implementation covers:
+<div align="center">
+  <img src="Resource/Forecast.png" width="75%">
+  <p><em>Figure: Forecasted Production vs Warehouse Capacity Threshold (2018–2030)</em></p>
+</div>
 
-Quadratic polynomial regression via Least Squares (Normal Equation & Pseudoinverse).
+---
 
-Validation of polynomial accuracy using the Taylor Series approximation.
+## 📖 Overview
+This project applies **mathematical modeling and numerical methods** to forecast EGIER’s monthly production capacity and plan for warehouse expansion.  
 
-Forecasting critical capacity exceedance using the Newton-Raphson method.
+Main goals:
+- 📈 Capture non-linear growth patterns in production.  
+- 🏗 Predict when output will exceed **25,000 bag capacity**.  
+- 🧮 Apply **quadratic regression**, **Taylor Series validation**, and **Newton-Raphson root finding**.  
 
-#⚙️ Features
+---
 
-Quadratic Polynomial Regression
+## 🔑 Highlights
 
-Captures both linear and non-linear trends in production.
+| Step | Methodology                  | Key Insight |
+|------|-------------------------------|-------------|
+| **Trend Fitting** | Quadratic polynomial regression | Nonlinear trends modeled accurately |
+| **Series Check**  | Taylor expansion (2nd order)   | Polynomial confirmed as exact match |
+| **Threshold Point** | Newton-Raphson iteration     | Capacity exceeded at **Month 180** |
+| **Planning Buffer** | Backward adjustment (−13 mo) | Build warehouse at **Month 167** |
 
-Computed using Normal Equation and Pseudoinverse (both yield identical results).
-
-Taylor Series Verification
-
-Demonstrates that the quadratic model perfectly matches the Taylor Series expansion (since it’s a degree-2 polynomial).
-
-Newton-Raphson Forecasting
-
-Predicts when production exceeds the 25,000-bag warehouse capacity.
-
-Accurately identifies the optimal month to start building a new warehouse.
-
-#📈 Methods & Equations
-
-Quadratic Model:
-
-𝑓
-(
-𝑥
-)
-=
-𝑎
-𝑥
-2
-+
-𝑏
-𝑥
-+
-𝑐
-f(x)=ax
-2
-+bx+c
-
-Normal Equation:
-
-𝑎
-=
-(
-𝐴
-𝑇
-𝐴
-)
-−
-1
-𝐴
-𝑇
-𝑌
-a=(A
-T
-A)
-−1
-A
-T
-Y
-
-Pseudoinverse Method:
-
-𝑎
-=
-𝐴
-+
-𝑌
-a=A
-+
-Y
-
-Newton-Raphson Iteration:
-
-𝑥
-𝑛
-+
-1
-=
-𝑥
-𝑛
-−
-𝑓
-(
-𝑥
-𝑛
-)
-𝑓
-′
-(
-𝑥
-𝑛
-)
-x
-n+1
-	​
-
-=x
-n
-	​
-
-−
-f
-′
-(x
-n
-	​
-
-)
-f(x
-n
-	​
-
-)
-	​
-
+✔️ Both **Normal Equation** and **Pseudoinverse** approaches gave identical regression results.  
+✔️ Forecasting tolerance achieved: **±0.015 error margin**. 
