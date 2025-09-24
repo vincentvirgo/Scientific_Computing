@@ -1,5 +1,5 @@
-📊 Production Trend Analysis using Quadratic Polynomial & Newton-Raphson Method
-📌 Project Overview
+#📊 Production Trend Analysis using Quadratic Polynomial & Newton-Raphson Method
+#📌 Project Overview
 
 This project analyzes monthly production data (2018–2023) using a quadratic polynomial regression model. The goal is to capture non-linear production trends and make future predictions, including estimating when production will exceed warehouse capacity.
 
@@ -11,7 +11,7 @@ Validation of polynomial accuracy using the Taylor Series approximation.
 
 Forecasting critical capacity exceedance using the Newton-Raphson method.
 
-⚙️ Features
+#⚙️ Features
 
 Quadratic Polynomial Regression
 
@@ -29,7 +29,7 @@ Predicts when production exceeds the 25,000-bag warehouse capacity.
 
 Accurately identifies the optimal month to start building a new warehouse.
 
-📈 Methods & Equations
+#📈 Methods & Equations
 
 Quadratic Model:
 
